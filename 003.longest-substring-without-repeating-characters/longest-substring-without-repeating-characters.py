@@ -17,6 +17,7 @@ class Solution(object):
 
   def lengthOfLongestSubstring(self, s):
     d = {}
+    
     start = 0
     ans = 0
     for i, c in enumerate(s):

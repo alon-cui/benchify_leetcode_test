@@ -14,6 +14,7 @@ class Solution(object):
     """
     p = dummy = ListNode(-1)
     carry = 0
+
     while l1 and l2:
       p.next = ListNode(l1.val + l2.val + carry)
       carry = p.next.val // 10
@@ -35,6 +36,7 @@ class Solution(object):
 
   # shorter version
   def addTwoNumbers(self, l1, l2):
+    
     p = dummy = ListNode(-1)
     carry = 0
     while l1 or l2 or carry:
